@@ -46,3 +46,19 @@ The project is organized as follows:
 - For mobile users, the hamburger menu and cross button allow toggling the left navigation box.
 
 Feel free to explore and enhance the project further!
+
+
+## Server Configuration
+
+- **.htaccess file**: This file is important for proper URL routing and preventing direct folder access for security. It also enables clean URLs and proper MIME type handling for audio files.
+
+## Adding New Albums
+
+To add a new album to the player:
+
+1. Create a new folder in the `public/songs/` directory with the album name.
+2. Add a `cover.jpg` image file to represent the album artwork.
+3. Add song files in the format `{artist name} - {song name}.mp3` (e.g., "Kendrick Lamar - Not Like Us.mp3").
+4. Ensure all MP3 files are properly tagged with metadata for best results.
+
+The player will automatically detect and include the new album in the interface during the next refresh.
