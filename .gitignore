@@ -1,0 +1,30 @@
+# Ignore most songs but keep samples
+public/songs/*
+
+# Don't ignore these specific sample albums
+!public/songs/K.K/
+!public/songs/others/
+# Add any other sample albums you want to include
+
+# For each album, exclude most files but keep samples
+public/songs/K.K/*
+public/songs/others/*
+# Match pattern for other albums
+
+# Keep only specific sample files in each album
+!public/songs/K.K/cover.jpg
+!public/songs/K.K/Bhool Bhulaiyaa - Labon Ko.mp3
+!public/songs/K.K/Om Shanti Om - Ajab Si.mp3
+!public/songs/others/cover.jpg
+!public/songs/others/Shaan - Chand Sifarish.mp3
+!public/songs/others/Artic Monkeys - I Wanna Be Yours.mp3
+# Add other specific files you want to keep
+
+# Ignore VS Code files
+.vscode/
+.sftp.json
+
+# Ignore other common files
+node_modules/
+.DS_Store
+*.log
